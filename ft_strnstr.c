@@ -6,7 +6,7 @@
 /*   By: gussoare <gussoare@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/06 08:17:15 by gussoare          #+#    #+#             */
-/*   Updated: 2022/05/18 09:35:29 by gussoare         ###   ########.fr       */
+/*   Updated: 2022/05/26 10:39:59 by gussoare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,6 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (0);
 }
-
 /*#include <string.h>
 #include <stdio.h>
 

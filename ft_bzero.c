@@ -6,11 +6,11 @@
 /*   By: gussoare <gussoare@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 08:54:12 by gussoare          #+#    #+#             */
-/*   Updated: 2022/05/04 10:12:30 by gussoare         ###   ########.fr       */
+/*   Updated: 2022/05/26 10:17:57 by gussoare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

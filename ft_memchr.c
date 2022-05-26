@@ -6,11 +6,11 @@
 /*   By: gussoare <gussoare@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/05 10:52:41 by gussoare          #+#    #+#             */
-/*   Updated: 2022/05/17 09:28:25 by gussoare         ###   ########.fr       */
+/*   Updated: 2022/05/26 10:31:00 by gussoare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
@@ -25,7 +25,6 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (0);
 }
-
 /*#include <stdio.h>
 
 int main()

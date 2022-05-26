@@ -6,9 +6,11 @@
 /*   By: gussoare <gussoare@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 13:07:10 by gussoare          #+#    #+#             */
-/*   Updated: 2022/05/16 15:00:21 by gussoare         ###   ########.fr       */
+/*   Updated: 2022/05/26 10:17:34 by gussoare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 static int	ft_space(int c)
 {

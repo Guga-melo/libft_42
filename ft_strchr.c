@@ -6,9 +6,11 @@
 /*   By: gussoare <gussoare@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 13:49:41 by gussoare          #+#    #+#             */
-/*   Updated: 2022/05/16 13:09:44 by gussoare         ###   ########.fr       */
+/*   Updated: 2022/05/26 10:36:17 by gussoare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {
@@ -27,7 +29,6 @@ char	*ft_strchr(const char *s, int c)
 	}
 	return (str);
 }
-
 /*#include <stdio.h>
 
 int main()

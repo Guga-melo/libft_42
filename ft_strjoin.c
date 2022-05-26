@@ -6,7 +6,7 @@
 /*   By: gussoare <gussoare@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 07:55:23 by gussoare          #+#    #+#             */
-/*   Updated: 2022/05/18 11:19:38 by gussoare         ###   ########.fr       */
+/*   Updated: 2022/05/26 09:40:31 by gussoare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,11 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	int		j;
 	int		i;
 
-	j = 0;
-	i = 0;
-	while (s1[i] != 0)
-		i++;
-	while (s2[j] != 0)
-		j++;
-	result = malloc((i + j) * sizeof(char));
+	if (!s1 || !s2)
+		return (0);
+	result = malloc((ft_strlen(s1) + ft_strlen(s2)) * sizeof(char));
+	if (result == 0)
+		return (0);
 	i = 0;
 	j = 0;
 	while (s1[i] != 0)
@@ -40,7 +38,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	result[i + j] = 0;
 	return (result);
 }
-
 /*#include <string.h>
 #include <stdio.h>
 

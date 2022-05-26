@@ -1,33 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gussoare <gussoare@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/03 12:55:35 by gussoare          #+#    #+#             */
-/*   Updated: 2022/05/26 10:19:20 by gussoare         ###   ########.fr       */
+/*   Created: 2022/05/24 10:25:52 by gussoare          #+#    #+#             */
+/*   Updated: 2022/05/26 09:59:01 by gussoare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int c)
+t_list	*ft_lstnew(void *content)
 {
-	if (((c >= '0') && (c <= '9')) || ((c >= 'a') && (c <= 'z'))
-		|| ((c >= 'A') && (c <= 'Z')))
-		return (1);
-	else
+	t_list	*new;
+
+	new = malloc(sizeof(t_list));
+	if (new == 0)
 		return (0);
+	new->content = content;
+	new->next = 0;
+	return (new);
 }
-
-/*#include <stdio.h>
-
-int main()
-{
-	char c;
-
-	c = '{';
-	printf("%d", ft_isalnum(c));
-	return (0);
-}*/

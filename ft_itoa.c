@@ -6,7 +6,7 @@
 /*   By: gussoare <gussoare@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/18 14:00:10 by gussoare          #+#    #+#             */
-/*   Updated: 2022/05/19 13:58:14 by gussoare         ###   ########.fr       */
+/*   Updated: 2022/05/26 10:22:01 by gussoare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,14 +64,13 @@ char	*ft_itoa(int n)
 	str = ft_putnum(str, nb, i, k);
 	return (str);
 }
-
 /*#include <stdio.h>
 
 int main()
 {
 	int	c;
 
-	c = 2147483647;
+	c = -2147483648;
 	printf("%s", ft_itoa(c));
 	return (0);
 }*/

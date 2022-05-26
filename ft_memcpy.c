@@ -6,11 +6,11 @@
 /*   By: gussoare <gussoare@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 11:22:08 by gussoare          #+#    #+#             */
-/*   Updated: 2022/05/17 08:23:00 by gussoare         ###   ########.fr       */
+/*   Updated: 2022/05/26 10:32:43 by gussoare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
@@ -21,6 +21,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	i = 0;
 	str_dst = (char *) dst;
 	str_src = (const char *) src;
+	if (!dst && !src)
+		return (0);
 	while (i < n)
 	{
 		str_dst[i] = str_src[i];
@@ -28,17 +30,17 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-/*
-#include <stdio.h>
+/*#include <stdio.h>
 #include <string.h>
 
 int main()
 {
-	char src[100] = "geeksfor";
 	size_t n;
+	char src[20] = "";
+	char dst[20] = "";
 
-	n = 9;
-	ft_memcpy(src + 5, src, n);
-	printf("%s\n", src);
+	n = NULL;
+	memcpy(dst, src, n);
+	printf("%s\n", dst);
 	return (0);
 }*/

@@ -6,7 +6,7 @@
 /*   By: gussoare <gussoare@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 13:45:05 by gussoare          #+#    #+#             */
-/*   Updated: 2022/05/18 09:30:51 by gussoare         ###   ########.fr       */
+/*   Updated: 2022/05/26 07:51:56 by gussoare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,12 @@ void	*ft_calloc(size_t count, size_t size)
 {
 	void	*p;
 
-	if (count == SIZE_MAX || size == SIZE_MAX)
+	if (!count || !size)
+	{
+		count = 1;
+		size = 1;
+	}
+	if ((count * size) / count != size)
 		return (0);
 	p = malloc(count * size);
 	if (p == 0)

@@ -6,17 +6,19 @@
 /*   By: gussoare <gussoare@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/19 17:20:39 by gussoare          #+#    #+#             */
-/*   Updated: 2022/05/19 17:36:46 by gussoare         ###   ########.fr       */
+/*   Updated: 2022/05/26 10:35:27 by gussoare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
-void ft_putstr_fd(char *s, int fd)
+void	ft_putstr_fd(char *s, int fd)
 {
-	int i;
+	int	i;
 
 	i = 0;
+	if (!s)
+		return ;
 	while (s[i] != 0)
 	{
 		write(fd, &s[i], 1);

@@ -6,11 +6,11 @@
 /*   By: gussoare <gussoare@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/05 15:22:42 by gussoare          #+#    #+#             */
-/*   Updated: 2022/05/17 09:21:53 by gussoare         ###   ########.fr       */
+/*   Updated: 2022/05/26 10:31:51 by gussoare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
@@ -30,7 +30,6 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-
 /*#include <stdio.h>
 #include <string.h>
 

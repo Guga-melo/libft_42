@@ -6,9 +6,11 @@
 /*   By: gussoare <gussoare@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 13:38:11 by gussoare          #+#    #+#             */
-/*   Updated: 2022/05/04 13:45:38 by gussoare         ###   ########.fr       */
+/*   Updated: 2022/05/26 10:41:30 by gussoare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_tolower(int c)
 {
@@ -16,7 +18,6 @@ int	ft_tolower(int c)
 		c += 32;
 	return (c);
 }
-
 /*#include <stdio.h>
 
 int main()

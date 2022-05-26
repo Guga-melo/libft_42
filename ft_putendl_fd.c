@@ -1,33 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gussoare <gussoare@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/03 12:55:35 by gussoare          #+#    #+#             */
-/*   Updated: 2022/05/26 10:19:20 by gussoare         ###   ########.fr       */
+/*   Created: 2022/05/23 13:21:16 by gussoare          #+#    #+#             */
+/*   Updated: 2022/05/26 10:34:38 by gussoare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int c)
+void	ft_putendl_fd(char *s, int fd)
 {
-	if (((c >= '0') && (c <= '9')) || ((c >= 'a') && (c <= 'z'))
-		|| ((c >= 'A') && (c <= 'Z')))
-		return (1);
-	else
-		return (0);
-}
+	int	i;
 
+	i = 0;
+	if (!s)
+		return ;
+	while (s[i])
+	{
+		write(fd, &s[i], 1);
+		i++;
+	}
+	write(fd, "\n", 1);
+}
 /*#include <stdio.h>
 
 int main()
 {
-	char c;
-
-	c = '{';
-	printf("%d", ft_isalnum(c));
-	return (0);
+	char str[20] = "Guga";
+	ft_putendl_fd(str, 1);
+	return(0);
 }*/

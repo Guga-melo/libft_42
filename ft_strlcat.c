@@ -6,7 +6,7 @@
 /*   By: gussoare <gussoare@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/06 12:27:28 by gussoare          #+#    #+#             */
-/*   Updated: 2022/05/17 14:36:03 by gussoare         ###   ########.fr       */
+/*   Updated: 2022/05/26 10:37:41 by gussoare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,6 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		return (len_dst + len_src);
 	return (dstsize + len_src);
 }
-
 /*#include <string.h>
 #include <stdio.h>
 

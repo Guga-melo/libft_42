@@ -6,13 +6,13 @@
 /*   By: gussoare <gussoare@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/19 16:58:29 by gussoare          #+#    #+#             */
-/*   Updated: 2022/05/19 17:34:32 by gussoare         ###   ########.fr       */
+/*   Updated: 2022/05/26 10:34:16 by gussoare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
-void ft_putchar_fd(char c, int fd)
+void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }

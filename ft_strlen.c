@@ -6,7 +6,7 @@
 /*   By: gussoare <gussoare@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/03 16:54:40 by gussoare          #+#    #+#             */
-/*   Updated: 2022/05/10 08:56:50 by gussoare         ###   ########.fr       */
+/*   Updated: 2022/05/26 10:38:59 by gussoare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@ size_t	ft_strlen(const char *s)
 	}
 	return (i);
 }
-
 /*#include <stdio.h>
 
 int main()

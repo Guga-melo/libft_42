@@ -6,11 +6,11 @@
 /*   By: gussoare <gussoare@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/03 14:36:59 by gussoare          #+#    #+#             */
-/*   Updated: 2022/05/04 08:45:38 by gussoare         ###   ########.fr       */
+/*   Updated: 2022/05/26 10:33:47 by gussoare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 void	*ft_memset(void *b, int c, size_t len)
 {
@@ -28,7 +28,6 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (str);
 }
-
 /*#include <stdio.h>
 
 int main ()

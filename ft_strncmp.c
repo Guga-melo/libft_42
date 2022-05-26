@@ -6,7 +6,7 @@
 /*   By: gussoare <gussoare@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/05 10:21:13 by gussoare          #+#    #+#             */
-/*   Updated: 2022/05/17 14:13:51 by gussoare         ###   ########.fr       */
+/*   Updated: 2022/05/26 10:39:39 by gussoare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,6 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-
 /*#include <stdio.h>
 
 int	main()

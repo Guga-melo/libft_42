@@ -6,7 +6,7 @@
 /*   By: gussoare <gussoare@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/19 14:03:51 by gussoare          #+#    #+#             */
-/*   Updated: 2022/05/19 14:53:08 by gussoare         ###   ########.fr       */
+/*   Updated: 2022/05/26 08:41:32 by gussoare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	int		len_str;
 	char	*str;
 	int		i;
 
 	i = 0;
-	len_str = ft_strlen(s);
-	str = malloc((len_str + 1) * sizeof(char));
+	if (!s)
+		return (0);
+	str = malloc((ft_strlen(s) + 1) * sizeof(char));
 	if (str == 0)
 		return (0);
 	while (s[i] != 0)
