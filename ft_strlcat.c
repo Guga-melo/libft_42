@@ -6,7 +6,7 @@
 /*   By: gussoare <gussoare@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/06 12:27:28 by gussoare          #+#    #+#             */
-/*   Updated: 2022/05/26 10:37:41 by gussoare         ###   ########.fr       */
+/*   Updated: 2022/05/30 10:39:17 by gussoare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,8 +42,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 
 int main()
 {
-	char src[20] = "guga";
-	char dst[20] = "bupe";
+	char src[20] = "";
+	char dst[20] = "";
 	size_t n;
 	n = 9;
 	printf("%lu\n", ft_strlcat(dst, src, n));

@@ -6,7 +6,7 @@
 /*   By: gussoare <gussoare@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 11:19:13 by gussoare          #+#    #+#             */
-/*   Updated: 2022/05/26 13:58:30 by gussoare         ###   ########.fr       */
+/*   Updated: 2022/05/30 08:21:08 by gussoare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,29 +16,23 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	char		*str_dst;
 	const char	*str_src;
-	char		*buffer;
-	size_t		i;
 
 	str_dst = (char *) dst;
 	str_src = (char *) src;
-	if (!dst && !src)
-		return (0);
-	buffer = calloc(len, sizeof(char));
-	i = 0;
-	while (i < len)
+	if (len == 0 || str_dst == str_src)
+		return (str_dst);
+	if (str_dst > str_src)
 	{
-		buffer[i] = str_src[i];
-		i++;
+		while (len--)
+			str_dst[len] = str_src[len];
 	}
-	i = 0;
-	while (i < len)
+	else
 	{
-		str_dst[i] = buffer[i];
-		i++;
+		str_dst = ft_memcpy(str_dst, str_src, len);
 	}
-	return (dst);
+	return (str_dst);
 }
-#include <stdio.h>
+/*#include <stdio.h>
 #include <string.h>
 
 int main(void)
@@ -48,4 +42,4 @@ int main(void)
 	size_t	len	= 5;
 	printf("%s", ft_memmove(dst, src, len));
 	return (0);
-}
+}*/

@@ -6,7 +6,7 @@
 /*   By: gussoare <gussoare@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/05 10:06:43 by gussoare          #+#    #+#             */
-/*   Updated: 2022/05/26 10:40:29 by gussoare         ###   ########.fr       */
+/*   Updated: 2022/05/30 08:14:32 by gussoare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,19 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	char	*pst;
 	char	*str;
 	char	find;
+	size_t	s_len;
 
+	s_len = ft_strlen(s) + 1;
 	str = (char *) s;
 	find = (char) c;
-	pst = 0;
-	if (find == 0)
-		return (str + ft_strlen(str));
-	while (*str != 0)
+	while (s_len--)
 	{
-		if (find == *str)
-			pst = str;
-		str++;
+		if (find == str[s_len])
+			return (&str[s_len]);
 	}
-	return (pst);
+	return (0);
 }
 /*#include <string.h>
 #include <stdio.h>
